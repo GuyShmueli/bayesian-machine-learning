@@ -40,8 +40,8 @@ family and error metric.
 ## Quick start
 ```bash
 # 1. clone repo & cd
-git clone https://github.com/GuyShmueli/bayesian-machine-learning/jerusalem-temperature-regression.git
-cd jerusalem-temperature-regression
+git clone https://github.com/GuyShmueli/bayesian-machine-learning.git
+cd bayesian-machine-learning/jerusalem-temp-prediction
 
 # We only need numpy + matplotlib:
 pip install numpy matplotlib
