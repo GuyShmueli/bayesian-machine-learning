@@ -8,15 +8,16 @@ You’ll compute the log-evidence of competing polynomial basis models, visualis
 ## What we do - step by step
 
 1. **Implement the log-evidence formula** for a Bayesian linear-regression model  
+   <!--  ↑ two trailing spaces = line break -->
 
-    $$
-    \log p\!\left(y \mid \mu_\theta,\Sigma_\theta,\sigma^2\right)
+    $$\displaystyle
+    \log p\!\bigl(y \mid \mu_\theta,\Sigma_\theta,\sigma^2\bigr)
       = \tfrac12 \log\frac{\lvert\Sigma_{\theta\mid\mathcal D}\rvert}{\lvert\Sigma_\theta\rvert}
       - \tfrac12\Bigl[
           (\mu_{\theta\mid\mathcal D}-\mu_\theta)^\top
           \Sigma_\theta^{-1}
           (\mu_{\theta\mid\mathcal D}-\mu_\theta)
-          + \tfrac1{\sigma^2}\lVert y-H\mu_{\theta\mid\mathcal D}\rVert^2
+          + \tfrac1{\sigma^2}\lVert y - H\mu_{\theta\mid\mathcal D}\rVert^2
           + N\log\sigma^2
         \Bigr]
       - \tfrac{p}{2}\log 2\pi
