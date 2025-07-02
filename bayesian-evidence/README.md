@@ -11,9 +11,9 @@ You’ll compute the log-evidence of competing polynomial basis models, visualis
    <!--  ↑ two trailing spaces = line break -->
 
     $$\displaystyle
-    \log p\!\bigl(y \mid \mu_\theta,\Sigma_\theta,\sigma^2\bigr)
-      = \tfrac12 \log\frac{\lvert\Sigma_{\theta\mid\mathcal D}\rvert}{\lvert\Sigma_\theta\rvert}
-      - \tfrac12\Bigl[
+    \log p\!\bigl(y \mid \mu_\theta,\Sigma_\theta,\sigma^2\bigr)    
+      = \tfrac12 \log\frac{\lvert\Sigma_{\theta\mid\mathcal D}\rvert}{\lvert\Sigma_\theta\rvert}    
+      - \tfrac12\Bigl[    
           (\mu_{\theta\mid\mathcal D}-\mu_\theta)^\top
           \Sigma_\theta^{-1}
           (\mu_{\theta\mid\mathcal D}-\mu_\theta)
