@@ -5,9 +5,10 @@ You’ll compute the log-evidence of competing polynomial basis models, visualis
 
 ---
 
-## 📋 What we do — step by step
+## What we do — step by step
 
 1. **Implement the log-evidence formula** for a Bayesian linear-regression model  
+   $$
    \[
    \log p \!\left(y \mid \mu_\theta,\Sigma_\theta,\sigma^2\right)
    = \tfrac12\log\frac{\lvert\Sigma_\theta\!\mid_{\!\mathcal D}}{\lvert\Sigma_\theta\rvert}
@@ -16,6 +17,7 @@ You’ll compute the log-evidence of competing polynomial basis models, visualis
    +N\log\sigma^2\Bigr]
    -\tfrac{p}{2}\log 2\pi
    \]
+   $$
 
 2. **Generate five synthetic functions** \(f_1,\dots,f_5\) on 500 evenly-spaced points in \([-3,3]\) and corrupt them with Gaussian noise \(\eta\sim\mathcal N(0,\,\sigma^2),\ \sigma^2=0.25\).
 
